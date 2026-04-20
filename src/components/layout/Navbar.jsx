@@ -4,7 +4,7 @@ import { Menu, ChevronDown, ChevronRight } from 'lucide-react';
 import { navLinks } from '../../data/navigation';
 import MobileMenu from './MobileMenu';
 import Button from '../ui/Button';
-import geerLogo from '../../assets/geer-logo.png';
+import geerLogo from '/geer-logo.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -45,15 +45,19 @@ export default function Navbar() {
     setActiveSubSubDropdown(null);
   }, [location]);
 
-  const dropdownBg = 'bg-darker/95 backdrop-blur-xl border-white/10 shadow-black/20';
-  const dropdownText = 'text-gray-300 hover:text-primary hover:bg-white/5';
+  const dropdownBg = isScrolled
+    ? 'bg-white border-border/50 shadow-black/10'
+    : 'bg-darker border-gray-700 shadow-black/10';
+  const dropdownText = isScrolled
+    ? 'text-text hover:text-primary hover:bg-primary/5'
+    : 'text-gray-300 hover:text-primary hover:bg-white/5';
 
   return (
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-darker/80 backdrop-blur-xl shadow-lg shadow-black/20'
+            ? 'bg-white/95 backdrop-blur-md shadow-lg shadow-black/5'
             : 'bg-transparent'
         }`}
       >
@@ -62,14 +66,16 @@ export default function Navbar() {
             {/* Mobile: Hamburger (left) */}
             <button
               onClick={() => setIsMobileOpen(true)}
-              className="lg:hidden p-2 rounded-lg transition-colors text-white hover:bg-white/10"
+              className={`lg:hidden p-2 rounded-lg transition-colors ${
+                isScrolled ? 'text-darker hover:bg-surface' : 'text-white hover:bg-white/10'
+              }`}
             >
               <Menu className="w-6 h-6" />
             </button>
 
             {/* Logo — centered on mobile, left on desktop */}
             <Link to="/" className="flex items-center lg:order-first">
-              <img src={geerLogo} alt="Geer Solutions" className="h-10 w-auto transition-all duration-300 brightness-0 invert" />
+              <img src={geerLogo} alt="Geer Solutions" className={`h-12 w-auto transition-all duration-300 ${isScrolled ? '' : 'brightness-0 invert'}`} />
             </Link>
 
             {/* Mobile: empty spacer to balance hamburger */}
@@ -93,6 +99,8 @@ export default function Navbar() {
                     className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                       location.pathname === link.path || (link.path !== '/' && location.pathname.startsWith(link.path))
                         ? 'text-primary'
+                        : isScrolled
+                        ? 'text-text hover:text-primary hover:bg-primary/5'
                         : 'text-white/90 hover:text-white hover:bg-white/10'
                     }`}
                   >
