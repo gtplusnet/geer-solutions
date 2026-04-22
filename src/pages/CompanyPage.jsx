@@ -2,10 +2,10 @@ import { Users, Target, Award, Heart } from 'lucide-react';
 import AnimatedSection from '../components/ui/AnimatedSection';
 
 const values = [
-  { icon: Target, title: 'Innovation', desc: 'We embrace cutting-edge technology to deliver forward-thinking solutions.' },
-  { icon: Users, title: 'Collaboration', desc: 'We work closely with clients to understand and exceed their expectations.' },
-  { icon: Award, title: 'Excellence', desc: 'We maintain the highest standards of quality in every project we deliver.' },
-  { icon: Heart, title: 'Dedication', desc: 'We are committed to our clients\' success and long-term growth.' },
+  { icon: Target, title: 'Agile Team Dynamics', desc: 'We’re a team and we’re always evolving. There is no problem we can’t solve when we’re together.' },
+  { icon: Users, title: 'After Sales Support', desc: 'We have daily Support Team online 24/7, so just call us, chat us, if you want to reach us.' },
+  { icon: Award, title: 'Communication', desc: 'Every code we make, every break we take, every meal we bake, every shimmy we shake, we’ll be updating you.' },
+  { icon: Heart, title: 'Consultants that cares', desc: 'We want you to stay. Stay with us and we’ll take care of you. We love long term relationship' },
 ];
 
 export default function CompanyPage() {
@@ -28,9 +28,23 @@ export default function CompanyPage() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection className="mb-16">
-            <h2 className="text-3xl font-bold text-darker mb-6">Our Story</h2>
+            <h2 className="text-3xl font-bold text-darker mb-6">Who we are</h2>
             <p className="text-text text-lg leading-relaxed max-w-3xl">
-              Founded with a vision to empower Philippine businesses through technology, Geer IT Solutions has grown into a trusted partner for companies seeking digital transformation. We specialize in creating custom software solutions that address real business challenges and drive measurable results.
+              <b>Geer IT Solutions, Inc. (GISI)</b> is a software development company specializing in transforming businesses with an extensive set of pinnacle digital solutions. We understand the complexities of modern markets and translate them into real business solutions. We focus on a consultative, business-first approach in everything we do, to solve challenges for every company and individual. We strategically enhance our clients’ environments with the right digital solutions, diverse expertise, compassion, and a deep understanding of the client’s vision
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection className="mb-16">
+            <h2 className="text-3xl font-bold text-darker mb-6">Mission</h2>
+            <p className="text-text text-lg leading-relaxed max-w-3xl">
+              To provide top-class digital solutions to solve complex problems for businesses. We strive to be more than just your average technology company. We hope to reflect community, diversity, and integrity starting from the people we hire, our strategic partnerships, the best-in-class solutions we implement, to our exceptional delivery practices.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection className="mb-16">
+            <h2 className="text-3xl font-bold text-darker mb-6">Vision</h2>
+            <p className="text-text text-lg leading-relaxed max-w-3xl">
+              Best-in-class Information Technology Services Company, Offering Tailor-Made Software, Superior IT Solutions to People and Business Everywhere. Being the top-class technology company does not mean being the biggest but it does mean being the best in terms of product value, customer service, employee talent, and consistent growth.
             </p>
           </AnimatedSection>
 
@@ -47,6 +61,7 @@ export default function CompanyPage() {
               </AnimatedSection>
             ))}
           </div>
+
         </div>
       </section>
     </>
