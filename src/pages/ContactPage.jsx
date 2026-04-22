@@ -78,7 +78,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-darker mb-1">Location</h3>
-                    <p className="text-text">Philippines</p>
+                    <p className="text-text"><b>Headquarters</b>: Level 10-1 One Global Place,5th Avenue corner 25 street Bonifacio Global City, 1632, Taguig City, Philippines
+                      <br/> <b>Production</b>: #18 M. Marcos St. Poblacion, Pandi, Bulacan, Philippines</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -87,7 +88,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-darker mb-1">Phone</h3>
-                    <p className="text-text">+63 917 600 366</p>
+                    <p className="text-text">+63 945 160 0366</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
