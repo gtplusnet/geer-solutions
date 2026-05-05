@@ -59,23 +59,21 @@ export const solutions = [
     price: 35000,
     icon: 'Palette',
     description:
-      'Complete branding solutions to establish and strengthen your business identity. From logo design to brand guidelines, we create memorable brand experiences.',
+      'Is the process of building a brand. To be more specific, it is a strategy designed to help people quickly identify their products and organization, and give them a reason to choose their products over the competition. Clarifies what a particular brand is and is not.',
     features: [
-      { title: 'Logo Design', desc: 'Professional logo creation and variations' },
-      { title: 'Brand Guidelines', desc: 'Comprehensive style guide documentation' },
-      { title: 'Marketing Materials', desc: 'Business cards, letterheads, brochures' },
-      { title: 'Social Media Kit', desc: 'Templates and assets for all platforms' },
-      { title: 'Website Design', desc: 'Brand-aligned web presence' },
-      { title: 'Brand Strategy', desc: 'Market positioning and messaging' },
+      { title: 'Logo Design Branding', desc: 'We can create your business branding by creating a logo. Our services will be with a maximum of 3 samples and 2 revisions.' },
+      { title: 'Website Creation', desc: 'We can provide you flexible designs for your business online. We offer Website designs with different pages such as Home, About Us, Contact Us, Login, and Register.' }
     ],
     benefits: [
-      'Consistent brand identity across all channels',
-      'Professional market presence',
-      'Increased brand recognition',
-      'Higher customer trust and loyalty',
-      'Competitive market positioning',
+      'Grabs Attention - A logo can quickly grab viewers’ attention and communicate a company’s core values in an interesting way. That short attention span – you know, the one that causes consumers to judge your business by its appearance – can work to your advantage, if you have a solid logo to speak for your company.  ',
+      'Make a Strong First Impression - You have one chance to get this right. A logo is a company’s first introduction to consumers. If designed well, it can pique the interest of the public and invite them to learn more about the company; if not, you’ve just alienated a potential customer base and basically tanked your business.',
+      'Foundation of your Brand Identity - Successful branding is about telling a story that will influence customers’ emotions – plain and simple. And, while it’s true that logo design is only a part of a company’s brand, it serves as the foundation for the entire narrative on which the brand is built. Colors, tones, fonts – all of this is determined by the story you’re trying to tell, and your logo sets the stage for this story. These elements will later translate from your logo onto all of your branding materials – letterheads, business cards, landing pages, you name it – creating a concrete, marketable brand identity.  ',
+      'Memorable - Your logo leads the horse (your audience) to water (your company). Logos are a point of identification; they’re the symbol that customers use to recognize your brand. Ideally, you’ll want people to instantly connect the sight of your logo with the memory of what your company does – and, more importantly, how it makes them feel. Because a good logo is a visual, aesthetically pleasing element, it triggers positive recall about your brand that the name of your company alone might not. And, if we’re all being honest, some of your audience will likely forget the name of your business (don’t take it personally – it’s human nature), but they’ll immediately associate your logo with their memories of your brand.',
+      'It Separates you from your competitors - Dare to be different with your logo, because your company logo tells consumers why your business is unique. Sure, maybe there are 50 other coffee shops in your city, but yours is the only one that’s committed to sustainability, and your green, earthy logo drives that message home. A well-designed company logo can communicate everything from the company’s background (professional, relaxed, fun) to their mission (entertainment, efficiency, and innovation) through the right icon or proper font. In other words, your logo is the forum to both convey your values and show consumers why you’re not like your competitors – you’re better.',
+      'It Foster Brand Loyalty - Consumers crave consistency. As your brand grows, your logo is going to become more familiar to a wide range of consumers, and this familiarity creates the perception that you’re trustworthy and accessible. Think about it: When you’re out shopping for workout gear and suddenly spot track pants with the Nike swoosh, you’re instantly ready to buy. Why? Because with Nike apparel, you know you’re in safe hands; Nike is a brand you trust. Trust is built on a well-designed logo, and brand loyalty is quick to follow. Once they like you, your customers are going to seek you out again and again – and your logo is the thing they’ll look for first.',
+      'Your Audience Expects it - Your logo is the first thing that your audience will look for when they see any communications from your brand. It should be front and center of all your marketing materials such as business cards, flyers, advertisements, etc. If you don’t have a logo (and one that stands out), then you are missing an opportunity to make your business stick in the minds of your audience.'
     ],
-    timeline: '2-4 weeks',
+    timeline: 'Once all the asset, graphics picture are ready given by the client, We can finished the website in 2 Weeks at most 6 Weeks.',
   },
   {
     slug: 'ecommerce',
