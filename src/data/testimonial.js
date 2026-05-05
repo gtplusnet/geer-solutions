@@ -55,13 +55,13 @@ export const posts = [
 ];
 
 export const categoryColor = {
-  TESTIMONIALS: "text-blue-600",
-  TECHNOLOGY: "text-violet-600",
-  BUSINESS: "text-emerald-600",
-  DEVELOPMENT: "text-amber-600",
-  DESIGN: "text-pink-600",
-  MARKETING: "text-red-600",
-  TRIVIAS: "text-orange-500",
-  NEWS: "text-red-500",
-  BLOGS: "text-green-600",
+  TESTIMONIALS: "text-gray-600",
+  TECHNOLOGY: "text-gray-600",
+  BUSINESS: "text-gray-600",
+  DEVELOPMENT: "text-gray-600",
+  DESIGN: "text-gray-600",
+  MARKETING: "text-gray-600",
+  TRIVIAS: "text-gray-600",
+  NEWS: "text-gray-600",
+  BLOGS: "text-gray-600",
 };
