@@ -18,7 +18,7 @@ export default function SolutionsPage() {
           <AnimatedSection>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Our Solutions</h1>
             <p className="text-text-white/70 text-lg max-w-2xl">
-              Comprehensive IT solutions designed for Philippine businesses. From accounting to blockchain, we have everything you need.
+              A type of application software that records and processes accounting transactions within functional modules such as accounts payable, accounts receivable, journal, general ledger, payroll, and trial balance. It functions as an accounting information system.
             </p>
           </AnimatedSection>
         </div>
