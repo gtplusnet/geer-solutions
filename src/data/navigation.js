@@ -47,6 +47,8 @@ export const navLinks = [
       };
     }),
   },
+
   { label: 'Events', path: '/events' },
+  { label: 'Blog', path: '/blog' },
   { label: 'Contact', path: '/contact' },
 ];
