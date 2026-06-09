@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { posts, categoryColor } from "../../data/testimonial";
 
 const POSTS_PER_PAGE = 12;
@@ -24,16 +24,12 @@ function BlogCard({ post }) {
 
       <Link
         to={`/blog/${post.slug}`}
-        className="overflow-hidden h-48 shrink-0 block"
+        className="overflow-hidden h-75 shrink-0 block"
       >
         <img
           src={post.image}
           alt={post.title}
           className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-          onError={(e) => {
-            e.target.src =
-              "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80";
-          }}
         />
       </Link>
 
@@ -42,17 +38,25 @@ function BlogCard({ post }) {
       </div>
 
       <div className="px-6 py-4 border-t border-gray-100 flex items-center flex-wrap gap-2">
-        <span className="text-xs font-bold tracking-wide text-gray-700">
+        {/* Author — clicks to post page */}
+        <Link
+          to={`/blog/${post.slug}`}
+          className="text-xs font-bold tracking-wide text-gray-700 hover:text-blue-600 transition-colors"
+        >
           {post.author}
-        </span>
+        </Link>
         <span className="text-gray-300 text-xs">/</span>
         <span className="text-xs text-gray-500 tracking-wide">{post.date}</span>
         {post.comments && (
           <>
             <span className="text-gray-300 text-xs">/</span>
-            <span className={`text-xs font-semibold tracking-wide ${color}`}>
+            {/* Comments — clicks to comments section */}
+            <Link
+              to={`/blog/${post.slug}#comments`}
+              className={`text-xs font-semibold tracking-wide ${color} hover:underline`}
+            >
               {post.comments}
-            </span>
+            </Link>
           </>
         )}
       </div>

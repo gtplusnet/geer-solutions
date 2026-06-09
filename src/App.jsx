@@ -18,7 +18,7 @@ import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
 import UnderDevelopmentPage from "./pages/UnderDevelopmentPage";
 import BlogPage from "./pages/Blogpages/BlogPage";
-import BlogPostPage from "./pages/Blogpages/blogs/GeerE-CommerceFeatures";
+import BlogPostRouter from "./pages/Blogpages/blogs/BlogPostRouter";
 
 export default function App() {
   return (
@@ -48,7 +48,7 @@ export default function App() {
         <Route path="events" element={<EventsPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="blog" element={<BlogPage />} />
-        <Route path="blog/:slug" element={<BlogPostPage />} />
+        <Route path="blog/:slug" element={<BlogPostRouter />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
     </Routes>
